@@ -1,0 +1,41 @@
+/* Submit button */
+.submitBtn {
+  background-color: #34adbc;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submitBtn:hover {
+  background-color: #4c2e26;
+}
+
+/* Close button */
+.closeBtn {
+  background-color: #b40e0e;
+  color: #fdfefe;
+  margin-left: 10px;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.closeBtn:hover {
+  background-color: #d0e68d;
+}
+
+.invalid {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}

@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.header {
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+
+button {
+  background-color: #34adbc;
+  color: #fdfefe;
+  margin-left: 10px;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); */
+}
+
+button:hover {
+  background-color: #d0e68d;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#fc9101, #dd5c00);
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #fdfefe;
+  text-shadow: 0 2px black, 0 3px #777;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+input:focus {
+  outline: none;
+  border-color: #018eb9;
+  background-color: #e0d4fd;
+}
+
+form {
+  margin: 0 auto;
+  padding: 20px;
+  border: none;
+  color: white;
+}
+
+/* Label styles */
+label {
+  display: flex;
+  margin-bottom: 0.25rem;
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Input field styles */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 2px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+/* Style the description and date */
+li > div {
+  flex: 1;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fdfefe;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #272526;
+  z-index: 9;
+  opacity: 90%;
+}
+
+.modal {
+  top: 31%;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 1.5rem;
+  width: 25rem;
+  max-width: 60%;
+  min-width: 265px;
+  height: 40%;
+  min-height: 280px;
+  max-height: 280px;
+  z-index: 10;
+  background: #272526;
+}
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fdfefe;
+}
+
+.error-text {
+  color: #b40e0e;
+  font-size: 8px;
+  margin-left: 5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: left;
+}
+
+.loginBtn {
+  background-color: rgb(7, 173, 7);
+}
+
+.logoutBtn {
+  background-color: #b40e0e;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.signupBtn {
+  background-color: rgb(155, 22, 155);
+}
